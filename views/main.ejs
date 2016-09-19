@@ -1,0 +1,205 @@
+<!--<!DOCTYPE html>-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="/stylesheets/style.css" rel="stylesheet">
+    <link href="/stylesheets/desktop.css" rel="stylesheet" media="(min-device-width: 1024px)">
+    <link href="/stylesheets/mobile.css" rel="stylesheet" media="(max-device-width: 640px) and (orientation:portrait)">
+    <link href="/stylesheets/mobile.css" rel="stylesheet" media="(max-device-width: 640px) and (orientation: landscape)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.9/jquery.fullPage.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.9/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.2/clipboard.min.js"></script>
+</head>
+
+<body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T4G964"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T4G964');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-78971408-2', 'auto');
+    ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+<!-- 상단 바 -->
+<div id="header_bar">
+    <div id="header_bar_img">
+        <div id="header_bar_contents">
+            <a href="javascript:$.fn.fullpage.moveTo(1);"> <div id="header_bar_logo"> </div> </a>
+            <div id="header_bar_applyBtn">
+                <a href="javascript:;"> <img src="/images/desktop/header_btn.png"> </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 메인 화면 -->
+<div id="fullpage">
+    <!--  Slide 1 -->
+    <div class="section">
+        <div class="slide slide_1">
+            <div id="slide_1_img" class="slide_img"> </div>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="section">
+        <div class="slide slide_2">
+            <div id="slide_2_img" class="slide_img"> </div>
+        </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="section">
+        <div class="slide slide_3">
+            <div id="slide_3_img" class="slide_img"> </div>
+        </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="section">
+        <div class="slide slide_4">
+            <div id="slide_4_img" class="slide_img"> </div>
+        </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="section">
+        <div class="slide slide_5">
+            <div id="slide_5_back_img" class="slide_img"> </div>
+            <div id="slide_5_img" class="slide_img"> </div>
+        </div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="section">
+        <div class="slide slide_6">
+            <div id="slide_6_img" class="slide_img"> </div>
+        </div>
+    </div>
+
+    <!-- Slide 7 -->
+    <div class="section">
+        <div class="slide slide_7">
+            <div id="slide_7_contents">
+                <div id="slide_7_text">
+                    현재 서비스 준비 중이며 하루 빨리 더욱 더 좋은 플랫폼을 만들기 위해 힘쓰고 있습니다. <br>
+                    성함과 연락처를 남겨주시면 론칭 시 연락드리도록 하겠습니다! <br> <br>
+
+                    앞으로도 소중한 의견과 애정, 그리고 지속적인 소통을 통해 발전해 나갈 수 있도록 <br>
+                    저희 푸디펀드가 함께 하겠습니다.
+                </div>
+                <div id="slide_7_img" class="slide_img"> </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 8 -->
+    <div class="section">
+        <div class="slide slide_8">
+            <div id="slide_8_img" class="slide_img"> </div>
+            <div id="slide_8_contents">
+                <div id="slide_8_contents_left">
+                    <div id="slide_8_contents_left_text">
+                        식당 개업을 준비하고 계시는 <br>
+                        지인들에게 푸디펀드를 <br>
+                        추천해보세요!
+                    </div>
+                    <ul id="slide_8_contents_left_share">
+                        <li> <a id="slide_8_contents_left_share_fb" onclick="share_facebook();"> </a> </li>
+                        <li> <a id="slide_8_contents_left_share_twitter" href="https://twitter.com/intent/tweet?text=지연 트위터 공유 성공&url=http://52.78.143.99:3000/"> </a> </li>
+                        <li> <a id="slide_8_contents_left_share_kakao" onclick="share_kakaotalk();"> </a> </li>
+                        <li> <a id="slide_8_contents_left_share_link" onclick="share_url_1();" data-clipboard-text="http://52.78.143.99:3000/"> </a> </li>
+                    </ul>
+                </div>
+                <div id="slide_8_contents_right">
+                    <ul class="slide_8_contents_right_switcher">
+                        <li> <a id="slide_8_contents_right_take"> 예비 창업자 </a> </li>
+                        <li> <a id="slide_8_contents_right_give"> 예비 후원자 </a> </li>
+                    </ul>
+                    <div> <input type="text" id="slide_8_contents_right_name" placeholder="이름"> </div>
+                    <div> <input type="email" id="slide_8_contents_right_email" placeholder="이메일"> </div>
+                    <div> <input type="text" id="slide_8_contents_right_phone" placeholder="휴대 전화번호"> </div>
+                    <div class="slide_8_contents_right_checkbox">
+                        <input type="checkbox" id="slide_8_contents_right_checkbox" value="agree">
+                        <label for="slide_8_contents_right_checkbox"> </label>
+                        <span id="slide_8_contents_right_checkbox_text"> 개인정보 제공 동의 </span>
+                    </div>
+                    <div>
+                        <button type="submit" id="slide_8_contents_right_submit"> </button>
+                    </div>
+                </div>
+                <div id="slide_8_contents_right_shadowBox"> </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 데스크탑 팝업 창 (신청하기) -->
+<div id="apply_popup" class="modal">
+    <div class="modal-content">
+        <span class="close"> <img src="/images/desktop/popup_close_btn.png"> </span>
+        <div id="apply_popup_contents">
+            <ul class="apply_popup_contents_switcher">
+                <li> <a id="apply_popup_contents_switcher_take"> 예비 창업자 </a> </li>
+                <li> <a id="apply_popup_contents_switcher_give"> 예비 후원자 </a> </li>
+            </ul>
+            <div id="apply_popup_contents_input">
+                <div> <input type="text" id="apply_popup_contents_name" placeholder="이름"> </div>
+                <div> <input type="email" id="apply_popup_contents_email" placeholder="이메일"> </div>
+                <div> <input type="text" id="apply_popup_contents_phone" placeholder="휴대 전화번호"> </div>
+                <div class="apply_popup_contents_checkbox">
+                    <input type="checkbox" id="apply_popup_contents_checkbox" value="agree">
+                    <label for="apply_popup_contents_checkbox"> </label>
+                    <span id="apply_popup_contents_checkbox_text"> 개인정보 제공 동의 </span>
+                </div>
+                <div>
+                    <button type="submit" id="apply_popup_contents_submit">
+                        <img src="/images/desktop/page_8_btn.png">
+                    </button>
+                </div>
+                <div id="apply_popup_contents_text">
+                    식당 개업을 준비하고 계시는 지인들에게 <br>
+                    푸디펀드를 추천해보세요! <br>
+                </div>
+                <ul id="apply_popup_contents_share">
+                    <li> <a id="apply_popup_contents_share_fb" onclick="share_facebook();"> </a> </li>
+                    <li> <a id="apply_popup_contents_share_twitter" href="https://twitter.com/intent/tweet?text=지연 트위터 공유 성공&url=http://52.78.143.99:3000/"> </a> </li>
+                    <li> <a id="apply_popup_contents_share_kakao" onclick="share_kakaotalk();"> </a> </li>
+                    <li> <a id="apply_popup_contents_share_link" onclick="share_url_2();" data-clipboard-text="http://52.78.143.99:3000/"> </a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 모바일 팝업 창 (링크 복사) -->
+<div id="mobile_popup" class="modal">
+    <div class="modal-content">
+        <img id="mobile_popup_close_btn" src="/images/mobile/popup_close_btn.png">
+        <div id="mobile_popup_contents">
+            <div id="mobile_popup_contents_url"> http://52.78.143.99:3000 </div>
+            <div id="mobile_popup_contents_text"> 모바일 버전은 지원되지 않습니다. <br> 직접 소스를 복사해주세요. </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="/javascripts/main.js"></script>
+</html>

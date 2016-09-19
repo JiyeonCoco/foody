@@ -1,0 +1,429 @@
+
+/* 데스크탑 */
+
+/* 상단 바 */
+#header_bar {
+    position: fixed;
+    z-index: 50;
+    width: 100% ;
+}
+#header_bar_img {
+    background-image: url('../images/desktop/header_bar.png');
+    height: 51px;
+}
+/* 상단 바 (로고 + 신청 버튼) */
+#header_bar_contents {
+    width: 962px;
+    position: relative;
+    margin: 0 auto;
+}
+#header_bar_logo {
+    background-image: url('../images/desktop/header_logo.png');
+    width: 201px;
+    height: 43px;
+    margin-top: 4px ;
+    float: left;
+    position: absolute;
+}
+#header_bar_applyBtn {
+    margin: 12px 0 0 856px;
+    float: left;
+    position: absolute;
+}
+
+
+/* 콘텐츠 화면 */
+.slide {
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+.slide_img {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    position: absolute;
+    top: 4.5%;
+    left: 50%;
+    margin-left: -960px;
+}
+#slide_1_img {
+    background-image: url('../images/desktop/page_1.jpg');
+}
+#slide_2_img {
+    background-image: url('../images/desktop/page_2.jpg');
+}
+#slide_3_img {
+    background-image: url('../images/desktop/page_3.jpg');
+}
+#slide_4_img {
+    background-image: url('../images/desktop/page_4.jpg');
+}
+#slide_5_back_img {
+    background-image: url('../images/desktop/page_5_back.jpg');
+}
+#slide_5_img {
+    background-image: url('../images/desktop/page_5.png');
+    width: 1028px;
+    height: 613px;
+    position: relative;
+    top: 3.5%;
+    left: 0;
+    margin: 0 auto;
+}
+#slide_6_img {
+    background-image: url('../images/desktop/page_6.jpg');
+}
+.slide_7 {
+    background-color: #ebebeb;
+}
+#slide_7_img {
+    background-image: url('../images/desktop/page_7.png');
+    height: 521px;
+    position: absolute;
+    top: 53.5%;
+    left: 50%;
+    margin-top: -260.5px;
+}
+#slide_7_text {
+    height: 145px;
+    position: absolute;
+    margin: 19px 0 0 155px;
+    padding: 18px 0 0 21px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    border-left: 1px solid #ffffff;
+    color: #ffffff;
+    text-align: left;
+    z-index: 2;
+}
+/* slide 8 (신청 화면) */
+#slide_8_img {
+    background-image: url('../images/desktop/page_8_back.jpg');
+}
+#slide_8_contents {
+    width: 738px;
+    height: 273px;
+    position: relative;
+    margin: -25.5px auto 0;
+}
+#slide_8_contents_left {
+    width: 200px;
+    height: 134px;
+    position: absolute;
+    margin-top: 100px;
+    padding: 24px 0 0 23px;
+    border-left: 1px solid #ffffff;
+    z-index: 2;
+}
+#slide_8_contents_left_text {
+    position: absolute;
+    float: left;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: left;
+    color: #ffffff;
+}
+#slide_8_contents_left_share_fb {
+    background-image: url('../images/desktop/share_facebook.png');
+}
+#slide_8_contents_left_share_twitter {
+    background-image: url('../images/desktop/share_twitter.png');
+}
+#slide_8_contents_left_share_kakao {
+    background-image: url('../images/desktop/share_kakao.png');
+}
+#slide_8_contents_left_share_link {
+    background-image: url('../images/desktop/share_link.png');
+}
+#slide_8_contents_left_share {
+    margin-top: 81px;
+}
+#slide_8_contents_left_share li  a {
+    width: 20px;
+    height: 20px;
+    background-size: 100% 100%;
+    display: inline;
+    position: relative;
+    float: left;
+    margin: 0;
+    border: 0;
+    margin-right: 8px;
+}
+#slide_8_contents_right {
+    width: 308px;
+    height: 335px;
+    position: absolute;
+    margin-left: 422px;
+    z-index: 2;
+    background-color: #ffffff;
+}
+.slide_8_contents_right_switcher {
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.slide_8_contents_right_switcher li {
+    width: 50%;
+    float: left;
+    padding: 10px 0;
+    background-color: #e2e2e2;
+}
+.slide_8_contents_right_switcher li a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #8f8f8f;
+}
+.slide_8_contents_right_switcher li.active {
+    background-color: #ffffff;
+}
+.slide_8_contents_right_switcher li.active a{
+    font-weight: 700;
+    color: #7abc50;
+}
+#slide_8_contents_right input {
+    width: 249px;
+    padding: 5px ;
+    border: 0;
+    border-bottom: 1px solid #91958f;
+    font-size: 14px;
+    font-weight: 400;
+    color: #9a9a9a;
+}
+#slide_8_contents_right_name {
+    margin-top: 53px;
+}
+#slide_8_contents_right_email {
+    margin-top: 35px;
+}
+#slide_8_contents_right_phone {
+    margin-top: 36px;
+}
+.slide_8_contents_right_checkbox {
+    width: 150px;
+    float: left;
+    left: 0;
+    margin: 23px 0 0 8px;
+}
+#slide_8_contents_right_checkbox {
+    display: none;
+}
+#slide_8_contents_right_checkbox + label:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    line-height: 1em;
+    font-size: 0.8em;
+    vertical-align: middle;
+    border: 1px solid #9e9e9e;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+#slide_8_contents_right_checkbox:checked + label:before {
+    content: "\2713";
+    border: 1px solid #7abc50;
+    color: #7abc50;
+}
+#slide_8_contents_right_checkbox_text {
+    font-size: 11px;
+    font-weight: 400;
+    color: #91958f;
+}
+#slide_8_contents_right_submit {
+    background-image: url('../images/desktop/page_8_btn.png');
+    width: 87px;
+    height: 30px;
+    position: relative;
+    padding: 0;
+    top: 0;
+    left: 0;
+    border: 0;
+    background-color: transparent;
+    margin: 23px 0 0 14px;
+    cursor: pointer;
+}
+#slide_8_contents_right_shadowBox {
+    width: 308px;
+    height: 335px;
+    position: absolute;
+    margin: 8px 0 0 430px;
+    background-color: #000000;
+    opacity: 0.15;
+    z-index: 1;
+}
+
+
+
+
+/* '신청하기' 버튼 클릭 시 나오는 모달 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.modal-content {
+    width: 308px;
+    height: 480px;
+    position: relative;
+    top: 20.5%;
+    margin: 0 auto;
+    background-color: #fefefe;
+    border: 1px solid #888;
+}
+.close {
+    width: 21px;
+    height: 21px;
+    position: relative;
+    left: 297px;
+    top: -10px;
+    cursor: pointer;
+}
+.apply_popup_contents_switcher {
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.apply_popup_contents_switcher li {
+    width: 50%;
+    float: left;
+    margin-top: -26px;
+    padding: 10px 0;
+    background-color: #e2e2e2;
+    text-align: center;
+}
+.apply_popup_contents_switcher li a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #8f8f8f;
+}
+.apply_popup_contents_switcher li.active {
+    background-color: #ffffff;
+}
+.apply_popup_contents_switcher li.active a {
+    font-weight: 700;
+    color: #7abc50;
+}
+#apply_popup_contents_input {
+    width: 259px;
+    height: 278px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: -21px;
+    border-bottom: 1px dashed #91958f;
+}
+#apply_popup_contents input {
+    width: 249px;
+    padding: 5px ;
+    border: 0;
+    border-bottom: 1px solid #91958f;
+    font-size: 14px;
+    font-weight: 400;
+    color: #9a9a9a;
+}
+#apply_popup_contents_name {
+    margin-top: 43px;
+}
+#apply_popup_contents_email {
+    margin-top: 40px;
+}
+#apply_popup_contents_phone {
+    margin-top: 40px;
+}
+.apply_popup_contents_checkbox {
+    width: 150px;
+    float: left;
+    left: 0;
+    margin-top: 23px;
+}
+#apply_popup_contents_checkbox {
+    display: none;
+}
+#apply_popup_contents_checkbox + label:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    line-height: 1em;
+    font-size: 0.8em;
+    vertical-align: middle;
+    border: 1px solid #9e9e9e;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+#apply_popup_contents_checkbox:checked + label:before {
+    content: "\2713";
+    border: 1px solid #7abc50;
+    color: #7abc50;
+    width: 10px;
+    padding-left: 2px ;
+}
+#apply_popup_contents_checkbox_text {
+    font-size: 11px;
+    font-weight: 400;
+    color: #91958f;
+}
+#apply_popup_contents_submit {
+    height: 30px;
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    margin: 23px 0 0 21px;
+}
+@-moz-document url-prefix() {
+    #apply_popup_contents_submit {
+        margin: 23px 0 0 16px;
+    }
+}
+#apply_popup_contents_submit img {
+    width: 87px;
+    height: 30px;
+    position: relative;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+#apply_popup_contents_text {
+    margin-top: 48px;
+    font-weight: 400;
+    font-size: 13px;
+    color: #91958f;
+    line-height: 18px;
+    text-align: left;
+}
+#apply_popup_contents_share_fb {
+    background-image: url('../images/desktop/share_facebook.png');
+}
+#apply_popup_contents_share_twitter {
+    background-image: url('../images/desktop/share_twitter.png');
+}
+#apply_popup_contents_share_kakao {
+    background-image: url('../images/desktop/share_kakao.png');
+}
+#apply_popup_contents_share_link {
+    background-image: url('../images/desktop/share_link.png');
+}
+#apply_popup_contents_share {
+    margin-top: 15px;
+}
+#apply_popup_contents_share li a {
+    width: 20px;
+    height: 20px;
+    background-size: 100% 100%;
+    display: inline;
+    position: relative;
+    float: left;
+    margin-right: 8px ;
+}
